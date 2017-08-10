@@ -7,8 +7,8 @@ fw.write("Delink is cool \n")
 fw.close()
 
 # reading files in python
-fr = open('first.txt', 'r')
+fr = open('first.txt', 'r')  # open the file
 text = fr.read()
 
-print(text)
+print(text)  # print the files content
 fr.close()
