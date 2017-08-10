@@ -14,4 +14,5 @@ print("----------------------------------------------")
 
 userInput = input()  # save input to a variable
 
-print(userInput)
+# call the function and pass in the users input
+download(userInput)
