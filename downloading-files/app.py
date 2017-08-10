@@ -6,4 +6,7 @@ print('--------------------------------')
 
 file_url = input()
 
-print(file_url)
+
+def download_file(file_url):
+    res = request.urlopen(file_url)
+    file = res.read()       # read the data
