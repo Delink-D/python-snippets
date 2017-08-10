@@ -6,5 +6,9 @@ fw.write("Delink is cool \n")
 
 fw.close()
 
+# reading files in python
+fr = open('first.txt', 'r')
+text = fr.read()
 
-
+print(text)
+fr.close()
