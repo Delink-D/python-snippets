@@ -10,4 +10,8 @@ def spider(max_pages):
         url = 'https://thenewboston.com/forum/recent_activity.php?page=' + str(pages)
         source_code = requests.get(url)
 
+        plane_text = source_code.text
+
+        soup = BeautifulSoup(plane_text)
+
 spider(1)
