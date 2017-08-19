@@ -4,7 +4,7 @@ from bs4 import BeautifulSoup
 
 
 def spider(max_pages):
-    pages = 1               # set the page nuber to crawl
+    pages = 2               # set the page nuber to crawl
 
     while pages <= max_pages:
         url = 'https://thenewboston.com/forum/recent_activity.php?page=' + str(pages)
@@ -16,6 +16,11 @@ def spider(max_pages):
 
         for link in soup.findAll('a', {'class': 'title'}):
             href = link.get('href')
-            print(href)
+            title = link.string
 
-spider(1)
+            print(href)
+            print(title)
+
+    pages += 1   # increment the page by one
+
+spider(2)
