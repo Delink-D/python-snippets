@@ -14,4 +14,8 @@ def spider(max_pages):
 
         soup = BeautifulSoup(plane_text)
 
+        for link in soup.findAll('a', {'class': 'title'}):
+            href = link.get('href')
+            print(href)
+
 spider(1)
