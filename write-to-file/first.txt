@@ -1,2 +1,3 @@
-This is my first sentence in writing files 
-Delink is cool 
+This is soo coool you should try it, writing data to files can save you big time. This is me saving my time. Enjoy!
+
+<<<Delink is cool>>
